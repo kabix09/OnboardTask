@@ -4,3 +4,7 @@
 #index:
 #    path: /
 #    defaults: { _controller: 'App\Controller\DefaultController::index' }
+
+animal:
+  path: /animals
+  defaults: { _controller: 'App\Controller\AnimalController::index' }

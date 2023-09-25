@@ -19,6 +19,6 @@ class RandomDataGeneratorService implements RandomStringGeneratorInterface, Rand
      */
     public function generateRandomString(): string
     {
-        return random_bytes(15);
+        return bin2hex(random_bytes(15));
     }
 }

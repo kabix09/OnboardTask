@@ -27,9 +27,9 @@ class DataController extends Controller
      */
     public function index(): Response
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/DataController.php',
+        return $this->render('view.html.twig', [
+            'randomInt' => $this->dataGeneratorService->generateRandomInt(),
+            'randomString' => $this->dataGeneratorService->generateRandomString(),
         ]);
     }
 }
